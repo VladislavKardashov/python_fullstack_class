@@ -1,6 +1,6 @@
 number_1 = int(input("Введите первое число: "))
-number_1 = int(input("Введите второе число: "))
-number_1 = int(input("Введите третье число: "))
+number_2 = int(input("Введите второе число: "))
+number_3 = int(input("Введите третье число: "))
 
 arefmetic_mean = (number_1 + number_2 + number_3) / 3
 
