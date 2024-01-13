@@ -2,7 +2,7 @@ length = float(input("Введите длину:  м"))
 width = float(input("Введите ширину:  м"))
 
 square = float(length * width)
-round_square = round(square, 2)_
+round_square = round(square, 2)
 
 print(f"Площадь равна: {round_square}")
 
