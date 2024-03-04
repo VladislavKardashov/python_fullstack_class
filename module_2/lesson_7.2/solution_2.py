@@ -1,7 +1,7 @@
 numbers = input("Введите список чисел:")
 numbers_line = [int(x) for x in numbers.split(',')]
 
-print("Сумма среза со второго по четвёртый элемент: ", sum(numbers_line[1:4]))
+print("Сумма среза по заданным элементам: ", sum(numbers_line[1:4]))
 
 
 #Задача 2: Сумма подсписка
