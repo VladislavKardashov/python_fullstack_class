@@ -1,12 +1,24 @@
+persons_list = [
+    'Снабжение Менеджер Иванов',
+    'Дизайн Дизайнер Смирнов',
+    'Снабжение Менеджер Петров',
+    'Дизайн Иллюстратор Cидоров',
+    'Маркетинг Аналитик Сергеев',
+    'Дизайн Дизайнер Васильев']
 
+supply = dict()
+desing = dict()
+for line in persons_list:
+    department, position, surname = line.split()
 
+    if department == "Снабжение":
+        supply[position] = surname
 
+    elif department == "Дизайн":
+        desing[position] = surname
 
-
-
-
-
-
+print("Снабжение:", supply)
+print("Дизайн", desing)
 
 #Задача 4: Управление персоналом
 #Описание:
