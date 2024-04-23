@@ -3,8 +3,8 @@ products_list = {'Яблоко': 100, 'Банан': 80, 'Кофе': 250, 'Чай
 product_min = min(products_list, key=lambda x: products_list [x])
 product_max = max(products_list, key=lambda x: products_list [x])
 
-print(f"Самый дешевый товар: {product_list} - {product_list[product_min]} p.")
-print(f"Самый дорогой товар: {product_list} - {product_list[product_max]} p.")
+print(f"Самый дешевый товар: {products_list} - {products_list[product_min]} p.")
+print(f"Самый дорогой товар: {products_list} - {products_list[product_max]} p.")
 
 
 
