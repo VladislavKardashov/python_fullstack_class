@@ -1,10 +1,15 @@
-products_list = {'Яблоко': 100, 'Банан': 80, 'Кофе': 250, 'Чай': 150}
+products_roster = {
+    'Яблоко' : 100,
+    'Банан' : 80,
+    'Кофе' : 250,
+    'Чай' : 150
+}
 
-product_min = min(products_list, key=lambda x: products_list [x])
-product_max = max(products_list, key=lambda x: products_list [x])
+product_min = min(products_roster, key=lambda x: products_roster[x])
+product_max = max(products_roster, key=lambda x: products_roster[x])
 
-print(f"Самый дешевый товар: {products_list} - {products_list[product_min]} p.")
-print(f"Самый дорогой товар: {products_list} - {products_list[product_max]} p.")
+print(f"Самый дешевый: {product_min} - {products_roster[product_min]} руб.")
+print(f"Самый дорогой: {product_max} - {products_roster[product_max]} руб.")
 
 
 
