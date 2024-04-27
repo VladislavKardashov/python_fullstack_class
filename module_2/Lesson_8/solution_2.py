@@ -1,11 +1,15 @@
-words_list = {'Красивый': 'Прекрасный', 'Уродливый': 'Некрасивый', 'Сложный': 'Запутанный', 'Простой': 'Легкий', 'Элементарно': 'Обыкновенно'}
-    
-while True:
-    words = input("Введите слово: ")
-    if words in words_list:
-       print("Синоним: ", words_list[words])
+def synonyms(words: dict):
+    word = input("Введите слово: ")
+    if word in words:
+        print("Синоним: ", words[word])
+    elif word in words.values():
+        for key in list(words.keys()):
+            if words[key] == word:
+                print("Синоним: ", key)
     else:
-       print("Такого слова нет в словаре")
+        print("Нет слова в словаре")
+
+synonyms({'Красивый': 'Прекрасный', 'Уродливый': 'Некрасивый', 'Сложный': 'Запутанный', 'Простой': 'Легкий', 'Элементарно': 'Обыкновенно'})
 
 
 #Задача 2: Синонимы в дизайне
