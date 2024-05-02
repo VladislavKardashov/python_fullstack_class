@@ -1,15 +1,11 @@
-items_price = input("Введите цены на товары и размер скидки: ")
-price_list = [int(x) for x in items_price.split (', ')]
-
 def calculate_discount(price):
     price_list = price[:-1]
-    sum_of_price = sum(price_list)
-    discount = sum_of_price * (price[-1]/100)
+    sum_price = sum(price_list)
+    discount = sum_price * (price[-1]/100)
     return discount
 
-total = calculate_discount(price_list)
-
-print(f"Сумма скидки: {total}")
+print(f'Сумма скидки: {calculate_discount([100, 200, 300, 10])}')
+print(f'Сумма скидки: {calculate_discount([50, 150, 250, 20])}')
 
 
 #Задача 1: Подсчет скидки
