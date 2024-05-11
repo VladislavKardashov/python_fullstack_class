@@ -2,7 +2,7 @@ time = float(input("Текущее время: "))
 
 if 6 <= time < 18:
     print("Цвет фона: Светлый")
-elif 18 <= time <= 24 or 24 <= time <6:
+elif 18 <= time <= 23 or 0 <= time <6:
     print("Цвет фона: Серый")
 else:
     print("Ошибка. Время указано неверно")
