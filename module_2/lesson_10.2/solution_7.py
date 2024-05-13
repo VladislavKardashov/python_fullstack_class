@@ -1,22 +1,17 @@
-input_prices = input("Список цен: ")
-prices = [int(x) for x in input_prices.split(', ')]
+def calculate_discount(price, index=0, previous_price = None):
+    price_end = []
+    if index < len(price):
+        new_price = price[index]
+        new_discount = previous_price * 0.1 if previous_price is not None else 0
+        discount_price = int(new_price - new_discount if previous_price is not None else new_price)
+        price_end.append(discount_price)
+        price_end += calculate_discount(price, index + 1, new_price)
+    return price_end
 
-def calculate_discount(prices, index=0, previous_price=None):
-    end_prices = []
+price = [1000, 2000, 3000]
 
-    if index < len(prices):
-        current_price = prices[index] 
-        current_discount = previous_price * 0.1 if previous_price is not None else 0
-        discount_price = current_price - current_discount if previous_price is not None else current_price
-        end_prices.append(discount_price)
-        end_prices += calculate_discount(prices, index + 1, current_price)
-
-    return end_prices
-
-result = calculate_discount(prices)
-result_int = [int(x) for x in result]
-
-print("Выходные данные:", result_int)
+discount = ', '.join(map(str, calculate_discount(price)))
+print("Выходные данные:", discount)
 
 
 #Задача 7: Расчет скидок
