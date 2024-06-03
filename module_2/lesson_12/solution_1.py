@@ -1,19 +1,25 @@
-def collect_data():
+import statistics
+
+
+data_1 = [1, 2, 3, 4, 5]
+data_2 = [10, 15, 5, 20]
+
+
+def collect_data(data):
     return process_data(data)
 
-import statistics
 
 def process_data(data):
     average = statistics.mean(data)
     return summarize_data(average)
 
-def summarize_data(average):
-    return f"Итого: Среднее значение: {average}"
 
-data = [1, 2, 3, 4, 5]
-data = [10, 15, 5, 20]
-result = collect_data()
-print(result)
+def summarize_data(average):
+    return print(f"Итого: Среднее значение: {average}")
+
+
+collect_data(data_1)
+collect_data(data_2)
 
 
 #Задача 1: Цепочка функций обработки данных
