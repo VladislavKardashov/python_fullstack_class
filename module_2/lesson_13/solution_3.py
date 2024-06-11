@@ -21,8 +21,8 @@ def calculate_project_cost(*args):
     return 3000
 
 
-print(calculate_project_cost(('Логотип', 'Малый бизнес')))
-print(calculate_project_cost(('Логотип', 'Малый бизнес')))
+print(calculate_project_cost('Логотип', 'Малый бизнес'))
+print(calculate_project_cost('Логотип', 'Малый бизнес'))
 
 
 
