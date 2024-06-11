@@ -1,7 +1,8 @@
 price_list = [99, 150, 200, 349, 501]
 
-def round_prices(prices):
-    round_list = [round(x, -2) for x in prices]
+def round_prices(price):
+    round_list = list(dict.fromkeys(map(lambda x: round(x, -2), price)))
+    round_list = list(dict.fromkeys(round_list))
     return round_list
 
 print(round_prices(price_list))
