@@ -6,7 +6,7 @@ def validate_input(func):
         if not isinstance(args[0], str):  
             raise TypeError("Название проекта должно быть строкой")
 
-        if not isinstance(args[1], int): 
+        if not isinstance(args[1], int):  
             raise TypeError("Второй аргумент не число!")
 
         return func(args)
