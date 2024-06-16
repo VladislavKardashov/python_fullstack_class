@@ -1,6 +1,6 @@
 def validate_input(func):
     def wrapper(*args, **kwargs):
-        if len(args) != 2 and len(kwargs) != 0:  
+        if len(args) != 2 and len(kwargs) != 0: 
             raise ValueError("Колличество задач")
 
         if not isinstance(args[0], str):  
