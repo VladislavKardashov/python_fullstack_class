@@ -40,3 +40,5 @@ k = len(str(n ^ 2)) + 2
 for row in a:
     format_row = [str(num).rjust(k) for num in row]
     print(" ".join(format_row))
+
+
