@@ -1,7 +1,33 @@
+from abc import ABC, abstractmethod
 
 
+class Instrument(ABC):
+    @abstractmethod
+    def play(self):
+        pass
 
 
+class Guitar(ABC):
+    def play(self):
+        print("Гитара: воспроизводит звук")
+
+
+class Piano(ABC):
+    def play(self):
+        print("Пианино: воспроизводит звук")
+
+
+class Flute(ABC):
+    def play(self):
+        print("Флейта: воспроизводит звук")
+
+
+my_guitar = Guitar()
+my_piano = Piano()
+my_flute = Flute()
+my_guitar.play()
+my_piano.play()
+my_flute.play()
 
 
 #Задание 1: Школа музыки (Наследование от абстрактного класса)
