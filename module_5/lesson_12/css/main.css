@@ -25,7 +25,7 @@
     font-size: 14px;
     display: flex;
     padding: 11px;
-    line-height: 140%;
+    line-height: 150%;
 }
 .menu{
     padding: 20px 0;
@@ -33,12 +33,12 @@
 .menu-structur{
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 600;
     display: flex;
     justify-content: left;
 }
 .menu-structur li{
-    margin-right: 70px;
+    margin-right: 100px;
 }
 .menu-structur li:last-child{
     margin-right: 0px;
@@ -47,7 +47,9 @@
     text-decoration: none;
     color: black;
 }
-
+.menu-structur a:hover {
+    color:chocolate
+}
 .slider-wrapper{
     
     height: 700px;
@@ -55,21 +57,21 @@
 }
 .slide{
     height: 600px;  
-    border-radius: 20px;  
+    border-radius: 60px;  
 }
 .carousel-indicators{
     top: 620px;    
 }
 .carousel-indicators [data-bs-target]{
     background: #6A9B96;
-    width: 12px;
+    width: 15px;
     height: 16px;
     border: none;
 }
 .section-title{
     margin-top: 120px;
     margin-bottom: 75px;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 300px;
     line-height: 140%;
@@ -99,6 +101,7 @@
 .tabs-button{
     border-radius: 20px 20px 0px 0px;
 }
+
 .tabs-navigation{
     margin-top: 177px;
 }
