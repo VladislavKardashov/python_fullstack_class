@@ -33,7 +33,7 @@
 .menu-structur{
     list-style-type: none;
     padding: 0;
-    margin: 600;
+    margin: 0;
     display: flex;
     justify-content: left;
 }
